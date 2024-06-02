@@ -41,20 +41,84 @@
 <body>
 
   <!-- ======= Header ======= -->
-  <script>
-    // Function to load the footer HTML
-    function loadFooter() {
-      fetch('header.html')
-        .then(response => response.text())
-        .then(data => {
-          document.body.insertAdjacentHTML('beforeend', data);
-        })
-        .catch(error => console.error('Error loading footer:', error));
-    }
-
-    // Load the footer when the page is fully loaded
-    window.addEventListener('load', loadFooter);
-  </script>
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center">
+  
+      <p class="logo me-auto"><a href="index.html"><span>SUNITA</span> VARJANI</a></p>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+  
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+      
+          <li><a href="services.html">Services</a></li>
+  
+          <li class="dropdown"><a href="recognition.html"><span>Professional-Recognition</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="about.html">Journal Editorial</a></li>
+              <li><a href="team.html">Awards/Honours/Distinctions</a></li>
+              <li><a href="testimonials.html">
+                Membership in Professional Societies</a></li>
+                <li><a href="testimonials.html">
+                  Member, Editorial/Advisory Board</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="publications.html"><span>Publications</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="about.html">Journal Articles</a></li>
+              <li><a href="team.html">Books</a></li>
+              <li><a href="testimonials.html">
+                Magazines</a></li>
+                <li><a href="testimonials.html">
+                  Book Chapters</a></li>
+                  <li><a href="testimonials.html">
+                    Invited Conference Talks</a></li><li><a href="testimonials.html">
+                      Seminars</a></li>
+  
+             
+            </ul>
+          </li>
+  
+          
+          <li><a href="new_openings.html">New Openings</a></li>
+          <li class="dropdown"><a href="research.html"><span>Research Projects</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="research-projectrs.html">Research Interests</a></li>
+              <li><a href="research-projectrs_1.html">Projects</a></li>
+              
+  
+             
+            </ul>
+          </li>
+  
+          <li class="dropdown"><a href="#"><span>More</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li class="dropdown"><a href="university_teaching.html"><span>University Teachings</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="#">Teaching Philosophy</a></li>
+                  <li><a href="courses.html">Courses</a></li>
+                </ul>
+              </li>
+              
+              <li><a href="grp_members.html">Group Members</a></li>
+              <li><a href="photo_gallery.html">Photo Gallery</a></li>
+              <li><a href="Contact.html">Contact</a></li>
+            </ul>
+          </li>
+  
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+  
+      <div class="header-social-links d-flex">
+        <a href="#" class="twitter"><i class="bu bi-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bu bi-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bu bi-instagram"></i></a>
+        <a href="#" class="linkedin"><i class="bu bi-linkedin"></i></i></a>
+      </div>
+  
+    </div>
+  </header>
   <!-- End Header -->
 
   <main id="main">
