@@ -24,6 +24,7 @@
 
 	<!-- CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/leaflet.css">
     <link rel="stylesheet" href="css/aos.css">
@@ -41,34 +42,38 @@
 
     <title> Dr. Sunita Varjani</title>
 	<style>
-		.modalll {
-        display: none;
-        position: fixed;
-        z-index: 1;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        overflow: auto;
-        background-color: rgba(0,0,0,0.4);
-		
-    }
+	.faq-header {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 15px;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+  }
 
-    .modal-contentt {
-        background-color: #fefefe;
-        margin: 15% auto;
-        padding: 20px;
-        border: 1px solid #888;
-        width: 60%;
-        max-width: 400px;
-		border-radius: 5%;
-    }
-		.close {
-        color: #111;
-        float: right;
-        font-size: 28px;
-        font-weight: bold;
-    }
+  .faq-header .icon-help,
+  .faq-header .icon-toggle {
+    margin-right: 15px;
+    font-size: 24px;
+  }
+
+  .faq-header span {
+    flex-grow: 1;
+    font-weight: bold;
+  }
+
+  .faq-header .icon-toggle {
+    transition: transform 0.3s ease;
+  }
+
+  .faq-header.open .icon-toggle {
+    transform: rotate(180deg);
+  }
+
+  .faq-content {
+    padding: 15px;
+  }
+	
 </style>
 	
 </head>
@@ -172,39 +177,16 @@
 				
 				<div class="row d-flex align-items-center">
 					<div class="col-xl-6 content-block">
-						<h1><span>Hello, I'm</span>Sunita <strong>Varjani</strong></h1>
+						<h1><span>Hello, I'm</span><strong style="color: #f4f4f4;">Sunita VARJANI</strong> </h1>
 						<p>
-							Senior Associate Professor at  <br> UPES,<span class="typer" id="main" data-words=" Dehradun," data-delay="100" data-deleteDelay="1000"></span>
+							Senior Associate Professor and Adjunct Professor at  <br> UPES, Korea University<Br><span class="typer" id="main" data-words=" Dehradun India," data-delay="100" data-deleteDelay="1000"></span>
 						</p>
 						<div class="link-group">
-							<a class="btn-main" href="#"id="hire-btn" >Other Recognized Platforms</a>
+							<a class="btn-main" href="#about-section"id="hire-btn" >More About Me</a>
 							
 						</div>
-						<div class="modalll" id="myModall">
-							<div class="modal-contentt">
-								<span class="close" onclick="closeModal()">&times;</span>
-								<a href = "https://www.upes.ac.in/faculty/school-of-health-sciences-and-technology/dr-sunita-varjani"><p style="color: #1ed33c; font-size: medium;">UPES &nbsp;<i class="bi bi-arrow-right" style="color: #128425;"></i></p></a>
-								<a href = "https://scholars.cityu.edu.hk/en/persons/sunita-varjani(f3620dfe-189e-4f07-9e35-fa31263f1455).html"><p style="color: #1ed33c;font-size: medium;">CityU Scholars &nbsp;<i class="bi bi-arrow-right"  style="color: #128425;"></i></p></a>
-								<a href = "https://www.scopus.com/authid/detail.uri?authorId=56641777600"><p style="color: #1ed33c;font-size: medium;">Scopus &nbsp;<i class="bi bi-arrow-right" style="color: #128425;"></i></p></a>
-								<a href = "https://www.webofscience.com/wos/author/record/A-1069-2014"><p style="color: #1ed33c;font-size: medium;">Web of Science &nbsp;<i class="bi bi-arrow-right" style="color: #128425;"></i></p></a>
-								<a href = "https://www.linkedin.com/in/dr-sunita-varjani-86295727/"><p style="color: #1ed33c;font-size: medium;">LinkedIn &nbsp;<i class="bi bi-arrow-right" style="color: #128425;"></i></p></a>
-								<a href = "https://scholar.google.co.in/citations?user=FAnYJo0AAAAJ&hl=en"><p style="color: #1ed33c;font-size: medium;">Google Scholar&nbsp;<i class="bi bi-arrow-right" style="color: #128425;"></i></p></a>
-								<a href = "https://orcid.org/0000-0001-6966-7768"><p style="color: #1ed33c;font-size: medium;">ORCID &nbsp;<i class="bi bi-arrow-right" style="color: #128425;"></i></p></a>
-								<a href = "https://www.researchgate.net/profile/Sunita-Varjani-2"><p style="color: #1ed33c;font-size: medium;">ResearchGate &nbsp;<i class="bi bi-arrow-right" style="color: #128425;"></i></p></a>
-								<a href = "https://research.com/u/sunita-varjani"><p style="color: #1ed33c;font-size: medium;">Research.com &nbsp;<i class="bi bi-arrow-right" style="color: #128425;"></i></p></a>
-							</div>
-						</div>
-						<script>
-							
-							document.getElementById("hire-btn").addEventListener("click", function() {
-								document.getElementById("myModall").style.display = "block";
-							});
 						
-							// JavaScript to close modal dialog
-							function closeModal() {
-								document.getElementById("myModall").style.display = "none";
-							}
-						</script>
+						
 						
 					</div>
 					<div class="col-xl-6 image-block">
@@ -215,7 +197,7 @@
 							</div>
 							<ul class="fun-facts">
 								<li class="experience">
-									<span><i class="counter">12</i>+</span>
+									<span><i class="counter">10</i>+</span>
 									<p style="color: black; font-size: large;"><strong>YEARS OF <br>EXPERIENCE</strong></p>
 								</li>
 								<li class="upes-logo">
@@ -223,6 +205,9 @@
 								</li>
 								<li class="cityu-logo">
 									<img src="assets/img/cityu.webp">
+								</li>
+								<li class="cityu-logo">
+									<img src="assets/img/h1_logo_new_en.svg">
 								</li>
 							</ul>
 						</div> <!-- .block-wrapper -->
@@ -262,7 +247,34 @@
 					<p>
 						Dr. Sunita Varjani is currently working as a Senior Associate Professor at UPES, Dehradun, India. Additionally, she holds the position as the Director at the Institute of Chartered Waste Managers, India. She has worked as visiting fellow at the City University of Hong Kong, Hong Kong and Scientific Officer at Gujarat Pollution Control Board, Gandhinagar, Gujarat, India. Dr. Varjani is a highly accomplished researcher and collaborator with a strong international and national presence. She has an extensive research background in environmental and industrial biotechnology, bioprocess technology, biomanufacturing and waste management. Her expertise has been recognized through various prestigious appointments and memberships. In 2021, Dr. Varjani was selected as a Member of The National Academy of Sciences, India (NASI), a testament to her outstanding contributions to the field. She has also served as a visiting fellow at the City University of Hong Kong (CityU) and a scientific officer at the Gujarat Pollution Control Board (GPCB), Government of Gujarat, India. Dr. Varjani has actively contributed to research and development initiatives in collaboration with government departments, and research institutions. She has been a member of the Research Advisory Committees for the Government of Gujarat institutes. Her research endeavors focus on developing innovative process technologies for pollution control, biomanufacturing, waste management, and resource recovery. 
 					</p>
-					
+					<section id="faq" class="faq section-bg">
+						<div class="faq-list">
+						  <ul>
+							<li data-aos="fade-up">
+							  <div class="faq-header">
+								
+								<span style="color: #075E54;">More About Me</span>
+								<i class="bx bx-chevron-down icon-toggle"></i>
+							  </div>
+							  <div class="faq-content" style="display: none;">
+								<a href = "https://www.upes.ac.in/faculty/school-of-health-sciences-and-technology/dr-sunita-varjani"><p style="color: #1ed33c; font-size: medium;">UPES &nbsp;<i class="bi bi-arrow-right" style="color: #128425;"></i></p></a>
+								<a href = "https://scholars.cityu.edu.hk/en/persons/sunita-varjani(f3620dfe-189e-4f07-9e35-fa31263f1455).html"><p style="color: #1ed33c;font-size: medium;">CityU Scholars &nbsp;<i class="bi bi-arrow-right"  style="color: #128425;"></i></p></a>
+								<a href = "https://www.scopus.com/authid/detail.uri?authorId=56641777600"><p style="color: #1ed33c;font-size: medium;">Scopus &nbsp;<i class="bi bi-arrow-right" style="color: #128425;"></i></p></a>
+								<a href = "https://www.webofscience.com/wos/author/record/A-1069-2014"><p style="color: #1ed33c;font-size: medium;">Web of Science &nbsp;<i class="bi bi-arrow-right" style="color: #128425;"></i></p></a>
+								<a href = "https://www.linkedin.com/in/dr-sunita-varjani-86295727/"><p style="color: #1ed33c;font-size: medium;">LinkedIn &nbsp;<i class="bi bi-arrow-right" style="color: #128425;"></i></p></a>
+								<a href = "https://scholar.google.co.in/citations?user=FAnYJo0AAAAJ&hl=en"><p style="color: #1ed33c;font-size: medium;">Google Scholar&nbsp;<i class="bi bi-arrow-right" style="color: #128425;"></i></p></a>
+								<a href = "https://orcid.org/0000-0001-6966-7768"><p style="color: #1ed33c;font-size: medium;">ORCID &nbsp;<i class="bi bi-arrow-right" style="color: #128425;"></i></p></a>
+								<a href = "https://www.researchgate.net/profile/Sunita-Varjani-2"><p style="color: #1ed33c;font-size: medium;">ResearchGate &nbsp;<i class="bi bi-arrow-right" style="color: #128425;"></i></p></a>
+								<a href = "https://research.com/u/sunita-varjani"><p style="color: #1ed33c;font-size: medium;">Research.com &nbsp;<i class="bi bi-arrow-right" style="color: #128425;"></i></p></a>
+							  </div>
+							</li>
+						  </ul>
+						</div>
+					  </section>
+					 
+
+					  
+					  
 					<!-- .personal-details -->
 					
 				</div>
@@ -742,9 +754,47 @@
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script>
+	document.addEventListener('DOMContentLoaded', function() {
+	  const faqHeaders = document.querySelectorAll('.faq-header');
+	
+	  faqHeaders.forEach(header => {
+		header.addEventListener('click', function(event) {
+		  const content = this.nextElementSibling;
+		  const isOpen = this.classList.contains('open');
+	
+		  // Close all other open sections
+		  faqHeaders.forEach(otherHeader => {
+			if (otherHeader !== this && otherHeader.classList.contains('open')) {
+			  otherHeader.classList.remove('open');
+			  otherHeader.nextElementSibling.style.display = 'none';
+			}
+		  });
+	
+		  // Toggle this section
+		  this.classList.toggle('open');
+		  content.style.display = isOpen ? 'none' : 'block';
+	
+		  // Prevent clicks on icons from toggling twice
+		  event.stopPropagation();
+		});
+	
+		// Add click event to the toggle icon itself
+		const toggleIcon = header.querySelector('.icon-toggle');
+		toggleIcon.addEventListener('click', function(event) {
+		  event.stopPropagation(); // Prevent this click from triggering the header's click event
+		  header.click(); // Simulate a click on the header
+		});
+	  });
+	});
+	</script>
 </body>
 
 
