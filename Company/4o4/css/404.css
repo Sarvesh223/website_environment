@@ -61,7 +61,7 @@
 
 .permission_denied h3 span:after {
   content: "";
-  border-bottom: 3px solid #ffbb39;
+  border-bottom: 3px solid #075E54;
   position: absolute;
   left: 0;
   top: 43%;
@@ -72,7 +72,7 @@
   background: none;
   color: #252525;
   padding: 12px 0px 10px 0px;
-  border: 1px solid #fff;
+  border: 1px solid #252525;
   outline: none;
   border-radius: 7px;
   width: 150px;
@@ -88,8 +88,8 @@
 }
 
 .denied__link:hover {
-  color: #ffbb39;
-  border-color: #ffbb39;
+  color: #075E54;
+  border-color: #075E54;
   cursor: pointer;
   opacity: 1;
 }
