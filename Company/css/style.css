@@ -681,13 +681,15 @@ h6 {
   left: 8%;
   top: 30%;
   position: absolute;
-  opacity: 0.3;
+  opacity: 1;
+  width: 50;
+  height: 50;
 }
 .hero-area .de-hero-4 {
   right: 6%;
   top: 16%;
   position: absolute;
-  opacity: 0.3;
+  opacity: 1;
   animation-duration: 3s;
   animation-delay: 200ms;
 }
@@ -710,14 +712,14 @@ h6 {
   right: 23%;
   top: 16%;
   position: absolute;
-  opacity: 0.3;
+  opacity: 1;
   animation-delay: 500ms;
 }
 .hero-area .de-hero-8 {
   left: 48%;
   bottom: 15%;
   position: absolute;
-  opacity: 0.3;
+  opacity: 1;
   animation-delay: 500ms;
 }
 /* Dark Mode Styling */
@@ -853,6 +855,7 @@ h6 {
   position: absolute;
   right: 10%;
   top: -8%;
+ 
 }
 .about-section .de-about-2 {
   position: absolute;
