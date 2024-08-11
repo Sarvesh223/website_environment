@@ -854,8 +854,9 @@ h6 {
 .about-section .de-about-1 {
   position: absolute;
   right: 10%;
-  top: -8%;
- 
+  top: 0;
+  max-height: 100%;
+  object-fit: contain;
 }
 .about-section .de-about-2 {
   position: absolute;
