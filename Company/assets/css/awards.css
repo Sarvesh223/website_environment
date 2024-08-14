@@ -107,14 +107,15 @@
   justify-content: space-between;
   flex-wrap: nowrap;
   overflow-x: auto;
-  gap: 20px;
+  gap: 15px;  /* Reduced gap to fit 5 images */
   padding: 20px 0;
 }
 
 .image-item {
   flex: 0 0 auto;
-  width: 300px;  /* Adjust this value as needed */
+  width: calc(20% - 12px);  /* 20% width for 5 items, minus some space for gaps */
   position: relative;
+  min-width: 150px;  /* Ensures images don't get too small on narrow screens */
 }
 
 .image-item img {
@@ -130,11 +131,24 @@
   right: 0;
   background-color: rgba(0, 0, 0, 0.7);
   color: white;
-  padding: 10px;
+  padding: 8px;
   text-align: center;
-  font-size: 14px;  /* Adjust as needed */
+  font-size: 12px;  /* Reduced font size to fit more text */
   line-height: 1.2;
-  max-height: 30%;  /* Adjust as needed */
+  max-height: 40%;  /* Increased max-height to allow for more text */
   overflow: hidden;
+}
+
+/* For better responsiveness */
+@media (max-width: 768px) {
+  .image-item {
+      width: calc(33.33% - 10px);  /* 3 items per row on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .image-item {
+      width: calc(50% - 7.5px);  /* 2 items per row on very small screens */
+  }
 }
 
