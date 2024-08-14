@@ -105,13 +105,16 @@
 .image-containerrrrrr {
   display: flex;
   justify-content: space-between;
-  margin-top: 20px;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  gap: 20px;
+  padding: 20px 0;
 }
 
 .image-item {
+  flex: 0 0 auto;
+  width: 300px;  /* Adjust this value as needed */
   position: relative;
-  width: 24%; /* Adjust as needed, leaving some space between images */
-  overflow: hidden;
 }
 
 .image-item img {
@@ -129,10 +132,9 @@
   color: white;
   padding: 10px;
   text-align: center;
-  transform: translateY(100%);
-  transition: transform 0.3s ease-in-out;
+  font-size: 14px;  /* Adjust as needed */
+  line-height: 1.2;
+  max-height: 30%;  /* Adjust as needed */
+  overflow: hidden;
 }
 
-.image-item:hover .image-title {
-  transform: translateY(0);
-}
